@@ -14,7 +14,7 @@
 
 using System.Windows.Media.Imaging;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
     public class Shirt : PrintBase
     {

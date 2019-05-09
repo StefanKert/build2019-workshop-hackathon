@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhotoStoreDemo.Properties {
+namespace PhotoStore.Properties {
     using System;
     
     

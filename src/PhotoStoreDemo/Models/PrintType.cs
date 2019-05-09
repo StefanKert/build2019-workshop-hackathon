@@ -12,14 +12,19 @@
 // // Copyright (c) Microsoft. All rights reserved.
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-using System.Windows.Media.Imaging;
-
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
-    public class Print : PrintBase
+    public class PrintType
     {
-        public Print(BitmapSource photo) : base(photo, "4x6 Print", 0.15)
+        public PrintType(string description, double cost)
         {
+            Description = description;
+            Cost = cost;
         }
+
+        public string Description { get; }
+        public double Cost { get; }
+
+        public override string ToString() => Description;
     }
 }

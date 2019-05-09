@@ -14,7 +14,7 @@
 
 using System;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
     public static class Program
     {
