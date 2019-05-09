@@ -49,7 +49,7 @@
   <PropertyGroup>
     <ProjectGuid>3a1114bc-649a-4067-af44-b73b8bc891ab</ProjectGuid>
     <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
     <EntryPointProjectUniqueName>..\PhotoStoreDemo\PhotoStore.csproj</EntryPointProjectUniqueName>
   </PropertyGroup>
