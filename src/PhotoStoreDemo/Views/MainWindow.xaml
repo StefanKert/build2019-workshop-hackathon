@@ -374,6 +374,7 @@
                                 <ColumnDefinition Width="10" />
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
                                 <RowDefinition Height="10" />
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="10" />
@@ -473,7 +474,9 @@
                      ItemsSource="{Binding }"
                      ItemContainerStyle="{DynamicResource PhotoListItem}"
                      SelectedIndex="0" />
-
+            <Label x:Name="Tags" Grid.Row="2" HorizontalAlignment="Stretch" Grid.ColumnSpan="3">
+Test
+            </Label>
             <StackPanel
                 Grid.Row="3" Grid.Column="0">
 
@@ -506,6 +509,7 @@
                     Margin="2">
                     Crop
                 </Button>
+                
 
             </StackPanel>
 

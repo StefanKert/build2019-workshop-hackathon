@@ -28,6 +28,7 @@ using System.Windows.Media.Imaging;
 using System.Reflection;
 using System.Diagnostics;
 using PhotoStore;
+using PhotoStore.Services;
 
 namespace PhotoStore
 {
@@ -66,7 +67,7 @@ namespace PhotoStore
 
         }
 
-        private void PhotoListSelection(object sender, RoutedEventArgs e)
+        private async void PhotoListSelection(object sender, RoutedEventArgs e)
         {
             var path = ((sender as ListBox)?.SelectedItem.ToString());
             BitmapSource img = BitmapFrame.Create(new Uri(path));
@@ -84,6 +85,11 @@ namespace PhotoStore
 #endif
             }
             CropButton.IsEnabled = false;
+
+            var descriptionService = new ImageDescriptionService();
+
+            var imageDescription = await descriptionService.GetDescriptionForImageAsync(path);
+            Tags.Content = "Description:" + imageDescription.Description + "\n\r" + "Tags:" + string.Join(",", imageDescription.Tags.ToArray());
         }
 
         private void AddToShoppingCart(object sender, RoutedEventArgs e)

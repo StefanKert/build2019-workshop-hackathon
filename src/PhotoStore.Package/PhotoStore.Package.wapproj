@@ -70,7 +70,8 @@
   <ItemGroup>
     <ProjectReference Include="..\PhotoStoreDemo\PhotoStore.csproj">
       <DesktopBridgeSelfContained>False</DesktopBridgeSelfContained>
-      <DesktopBridgeIdentifier>$(DesktopBridgeRuntimeIdentifier)</DesktopBridgeIdentifier>
+      <DesktopBridgeIdentifier>
+      </DesktopBridgeIdentifier>
       <Properties>DesktopBridgeSelfContained=%(DesktopBridgeSelfContained);DesktopBridgeIdentifier=%(DesktopBridgeIdentifier)</Properties>
       <SkipGetTargetFrameworkProperties>True</SkipGetTargetFrameworkProperties>
     </ProjectReference>
