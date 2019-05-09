@@ -45,10 +45,4 @@
     <Folder Include="Views\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Page Update="C:\Users\stefan.kert\.nuget\packages\microsoft.ui.xaml\2.1.190405004.2\build\DensityStyles\Compact.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
 </Project>
