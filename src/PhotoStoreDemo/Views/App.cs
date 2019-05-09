@@ -17,7 +17,7 @@ using System.IO;
 using System.Reflection;
 using System.Windows;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
     /// <summary>
     ///     Interaction logic for App.xaml

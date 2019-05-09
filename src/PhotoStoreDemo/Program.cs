@@ -1,4 +1,4 @@
-//*********************************************************
+﻿//*********************************************************
 //
 // Copyright (c) Microsoft. All rights reserved.
 // This code is licensed under the MIT License (MIT).
@@ -12,19 +12,23 @@
 // // Copyright (c) Microsoft. All rights reserved.
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-namespace PhotoStoreDemo
+using System;
+
+namespace PhotoStore
 {
-    public class PrintType
+    public static class Program
     {
-        public PrintType(string description, double cost)
+        [STAThread]
+        public static void Main()
         {
-            Description = description;
-            Cost = cost;
+            using (var xamlApp = new Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication())
+            {
+                var appOwnedWindowsXamlManager = xamlApp.WindowsXamlManager;
+
+                var app = new App();
+                app.InitializeComponent();
+                app.Run();
+            }
         }
-
-        public string Description { get; }
-        public double Cost { get; }
-
-        public override string ToString() => Description;
     }
 }

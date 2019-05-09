@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
     public class PhotosFolder
     {

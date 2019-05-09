@@ -13,27 +13,16 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.IO;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
-    public class PhotoList : ObservableCollection<ImageFile>
+    public class PrintTypeList : ObservableCollection<PrintType>
     {
-        private DirectoryInfo _directory;
-
-        public void Init(string path)
+        public PrintTypeList()
         {
-            _directory = new DirectoryInfo(path);
-            Update();
-        }
-       
-        private void Update()
-        {
-            foreach (var f in _directory.GetFiles("*"))
-            {
-                Add(new ImageFile(f.FullName));
-            }
+            Add(new PrintType("4x6 Print", 0.15));
+            Add(new PrintType("Greeting Card", 1.49));
+            Add(new PrintType("T-Shirt", 14.99));
         }
     }
 }

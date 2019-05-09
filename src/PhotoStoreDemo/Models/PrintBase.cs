@@ -15,7 +15,7 @@
 using System.ComponentModel;
 using System.Windows.Media.Imaging;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
     public class PrintBase : INotifyPropertyChanged
     {

@@ -14,11 +14,11 @@
 
 using System.Windows.Media.Imaging;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
-    public class GreetingCard : PrintBase
+    public class Print : PrintBase
     {
-        public GreetingCard(BitmapSource photo) : base(photo, "Greeting Card", 1.49)
+        public Print(BitmapSource photo) : base(photo, "4x6 Print", 0.15)
         {
         }
     }

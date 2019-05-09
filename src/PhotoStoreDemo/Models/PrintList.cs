@@ -1,4 +1,4 @@
-﻿//*********************************************************
+//*********************************************************
 //
 // Copyright (c) Microsoft. All rights reserved.
 // This code is licensed under the MIT License (MIT).
@@ -12,23 +12,11 @@
 // // Copyright (c) Microsoft. All rights reserved.
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-using System;
+using System.Collections.ObjectModel;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
-    public static class Program
+    public class PrintList : ObservableCollection<PrintBase>
     {
-        [STAThread]
-        public static void Main()
-        {
-            using (var xamlApp = new Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication())
-            {
-                var appOwnedWindowsXamlManager = xamlApp.WindowsXamlManager;
-
-                var app = new App();
-                app.InitializeComponent();
-                app.Run();
-            }
-        }
     }
 }

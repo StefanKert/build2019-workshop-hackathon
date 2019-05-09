@@ -27,8 +27,9 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Reflection;
 using System.Diagnostics;
+using PhotoStore;
 
-namespace PhotoStoreDemo
+namespace PhotoStore
 {
     /// <summary>
     ///     Interaction logic for MainWindow.xaml
