@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 15.0.26020.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStoreDemo", "PhotoStoreDemo\PhotoStoreDemo.csproj", "{D6567F46-7604-4714-9785-F99341AE5C81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoStoreDemo", "PhotoStoreDemo\PhotoStoreDemo.csproj", "{D6567F46-7604-4714-9785-F99341AE5C81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{474DE101-4B05-4997-BC19-1B913636D05E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoStore.Tests", "test\PhotoStore.Tests\PhotoStore.Tests.csproj", "{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,28 @@ Global
 		{D6567F46-7604-4714-9785-F99341AE5C81}.Release|x64.Build.0 = Release|Any CPU
 		{D6567F46-7604-4714-9785-F99341AE5C81}.Release|x86.ActiveCfg = Release|Any CPU
 		{D6567F46-7604-4714-9785-F99341AE5C81}.Release|x86.Build.0 = Release|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Debug|x64.Build.0 = Debug|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Debug|x86.Build.0 = Debug|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Release|ARM.Build.0 = Release|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Release|x64.ActiveCfg = Release|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Release|x64.Build.0 = Release|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Release|x86.ActiveCfg = Release|Any CPU
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A232CA6D-34F4-4DAB-8E11-E9C5BDA76245} = {474DE101-4B05-4997-BC19-1B913636D05E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7198496B-16C0-449D-88F7-3D6724CEE5E4}
