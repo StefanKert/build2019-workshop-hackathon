@@ -1,5 +1,5 @@
 using FluentAssertions;
-using PhotoStoreDemo.Services;
+using PhotoStore.Services;
 using System;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
